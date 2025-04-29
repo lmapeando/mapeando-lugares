@@ -61,7 +61,10 @@ export default function Login() {
                 alert('Success! No user is logged in anymore!');
             }
             getCurrentUser();
-            window.history.pushState({}, '', '/'); // Redirigir a la página de inicio
+            const nuevaURL = `/`;
+
+            window.history.pushState({}, '', nuevaURL);
+            window.location.reload(); // O eliminar si no es necesario recargar
             return true;
         } catch (error) {
             alert(`Error! ${error.message}`);

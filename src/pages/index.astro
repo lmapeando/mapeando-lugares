@@ -15,7 +15,7 @@ import Footer from '../components/Footer.astro';
 					<h3 class="sub-title">PARTICIPA Y CUÉNTANOS EL ESTADO DE TU CIUDAD</h3>
 					<p>Todo el mundo puede ser parte de la solución, cuéntanos la historia de la zona donde vives, algún suceso importante y las problemáticas de tu barrio, porque con tu apoyo se puede contribuir a un desarrollo del sector en el cual todos convivimos y somos partícipes.</p>
 				</div>
-				<div class="butt ">
+				<div class="butt">
 					<a class="ButtonV" href="/Formulario">PARTICIPAR</a>
 				</div>
 			</div>
@@ -30,10 +30,10 @@ import Footer from '../components/Footer.astro';
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h2 class="museo">MUSEOS Y SU IMPORTANCIA SOCIAL 
+					<h2 class="museo">MUSEOS Y SU IMPORTANCIA SOCIAL </h2>
 				</div>
 				<div class="col-md-6">
-					<p class="cuerpo ">Relato acerca del impacto de los museos del sector de La Candelaria y como enfrentan cada día los cambios de la sociedad debido al avance tecnológico, tratando de generar una mayor visualización en el sector más histórico de la ciudad.</p>
+					<p class="cuerpo">Relato acerca del impacto de los museos del sector de La Candelaria y como enfrentan cada día los cambios de la sociedad debido al avance tecnológico, tratando de generar una mayor visualización en el sector más histórico de la ciudad.</p>
 				</div>
 			</div>
 		</div>
@@ -48,7 +48,7 @@ import Footer from '../components/Footer.astro';
 					<p class="MarcaAgua">Museo Casa de Moneda - Colección Numismática del Banco de la Republica.</p>
 					<p class="cuerpo2">Fotografía por: Mario Carvajal</p>
 					<div class="butt3">
-					<a class="ButtonV2" href="/Galerias">VER LAS COLECCIONES</a>
+						<a class="ButtonV2" href="/Galerias">VER LAS COLECCIONES</a>
 					</div>
 				</div>
 			</div>
@@ -61,139 +61,164 @@ import Footer from '../components/Footer.astro';
 </Layout>
 
 <style>
-	img {
-		width: 100%;
-	}
-	.ImgActual{
-		width: 70%;
-	}
-	.ImgInicio{
-		position: relative;
-		top: -100px;
-		z-index: 0;
-	}
-	.title{
-		font-weight: bold;
-	}
-	.sub-title{
-		font-size: 1.2rem;
-		font-weight: bold;
-	}
-	.text{
-		font-weight: bold;
-		max-width: 550px;
-	}
-	.logo{
-		max-width: 250px;
-	}
-	.container{
-		min-width: 100%;
-		position: relative;
-		display: inline-block;
-		text-align: center;
-	}
-	.centrado{
-		position: absolute;
-    	top: 30%;
-    	left: 50%;
-    	transform: translate(-50%, -50%);
-		color: white;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	.esquina{
-		position: absolute;
-    	top: 75%;
-    	left: 90%;
-    	transform: translate(-50%, -50%);
-		color: white;
-	}
-	.ButtonV{
-		text-align: center;
-		text-decoration: none;
-		color: white;
-    }
-	.ButtonV2{
-		text-decoration: none;
-		color: black;
-		font-size: 0.7rem;
-    }
-	
-	.butt{
-		text-align: center;
-		width: 180px;
-		font-size: 1.4rem;
-		font-weight: bold;
-		min-height: 40px;
-		background-color: #56B93D;
-        border-radius: 20px;
-	}
-	.butt2{
-		text-align: center;
-		width: 180px;
-		font-size: 1.4rem;
-		font-weight: bold;
-		min-height: 40px;
-		background-color: transparent;
-        border-radius: 20px;
-		border: white solid ;
-	}
-	.butt3{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		width: 150px;
-		font-size: 1.4rem;
-		font-weight: bold;
-		height: 30px;
-		background-color: transparent;
-        border-radius: 20px;
-		border: black solid ;
-	}
-	.museo{
-		font-size: 2.813rem;
-		font-weight: bold;
-	}
-
-	.cuerpo{
-		font-size: 1.25rem;
-		text-align: left;
-	}
-	.cuerpo2{
-		font-size: 1.25rem;
-		text-align: right;
-		margin-left: 40%;
-	}
-	.MarcaAgua{
-		color: #40582A;
-		font-size: 1.563rem;
-		font-weight: bold;
-
-	}
-	.museo2{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-	}
-
-
-	.item {
-  float: left;
-  width: 100%;
-  margin-bottom: 1.8em;
-  }
-  .sectionVideo{
+img {
+	width: 100%;
+}
+.ImgActual {
+	width: 70%;
+}
+.ImgInicio {
+	position: relative;
+	top: -100px;
+	z-index: 0;
+}
+.title {
+	font-weight: bold;
+}
+.sub-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.text {
+	font-weight: bold;
+	max-width: 550px;
+}
+.logo {
+	max-width: 250px;
+}
+.container {
+	min-width: 100%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+.centrado {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.esquina {
+	position: absolute;
+	top: 75%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.ButtonV {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+.ButtonV2 {
+	text-decoration: none;
+	color: black;
+	font-size: 0.7rem;
+}
+.butt, .butt2, .butt3 {
+	text-align: center;
+	width: 180px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	min-height: 40px;
+	border-radius: 20px;
+}
+.butt {
+	background-color: #56B93D;
+}
+.butt2 {
+	background-color: transparent;
+	border: white solid;
+}
+.butt3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	background-color: transparent;
+	border: black solid;
+}
+.museo {
+	font-size: 2.813rem;
+	font-weight: bold;
+}
+.cuerpo {
+	font-size: 1.25rem;
+	text-align: left;
+}
+.cuerpo2 {
+	font-size: 1.25rem;
+	text-align: right;
+	margin-left: 40%;
+}
+.MarcaAgua {
+	color: #40582A;
+	font-size: 1.563rem;
+	font-weight: bold;
+}
+.museo2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.item {
+	float: left;
+	width: 100%;
+	margin-bottom: 1.8em;
+}
+.sectionVideo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 25px;
-  }
-  .sectionVideo h3{
+}
+.sectionVideo h3 {
 	font-weight: bold;
-	margin-bottom: 25px;	
-  }
+	margin-bottom: 25px;
+}
+
+/* Responsive ajustes para móviles */
+@media (max-width: 768px) {
+	.ImgInicio {
+		top: 0;
+	}
+	.centrado {
+		position: static;
+		transform: none;
+		padding: 1rem;
+	}
+	.esquina {
+		position: static;
+		margin-top: 1rem;
+	}
+	.cuerpo, .cuerpo2 {
+		text-align: center;
+		margin-left: 0;
+	}
+	.ImgActual {
+		width: 100%;
+	}
+	.butt, .butt2, .butt3 {
+		width: 100%;
+		margin: 10px 0;
+		font-size: 1rem;
+	}
+	.museo2 {
+		margin: 1rem 0;
+	}
+	.text {
+		max-width: 100%;
+	}
+	.logo {
+		max-width: 150px;
+	}
+	iframe {
+		width: 100%;
+		height: auto;
+	}
+}
 </style>
