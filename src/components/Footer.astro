@@ -1,0 +1,159 @@
+---
+import Login from "./Login.jsx";
+---
+
+<footer>
+    <div class="footer-main sec-padd2">
+        <div class="container w-100">
+            <div class="row align-items-center d-flex justify-content-between ">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-col">
+                        <div class="logo-part">
+                            <a href="#" class="footer-logo text-uppercase">
+                                <img src="images/Logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-col service-col">
+                        <h3 class="footer-title">MAPEANDO LUGARES</h3>
+                        <p>PARTICIPA Y CUÉNTANOS EL ESTADO DE TU CIUDAD</p>
+                        <button type="button" class="Mod" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <p>SEMILLERO DE INVESTIGACIÓN VTS & SAVARC</p>
+                          </button>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-col post-column">
+                        <img src="images/DAB.png" alt="logo DAB">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer-col">
+                        <div class="footer-widget contact-column">
+
+                            <h5>INFORMACIÓN DE CONTACTO </h5>
+                            <ul class="social-icon">
+                                <li>
+                                    <div>
+                                        <i class="bi bi-whatsapp"></i>
+                                    </div>
+                                    <div class="text-holder">
+
+                                        <h6 class="text-uppercase">TELÉFONO</h6>
+                                        <p>302-402-8896</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="bi bi-compass-fill"></i>
+                                    </div>
+                                    <div class="text-holder">
+
+                                        <h6 class="text-uppercase">DIRECCIÓN</h6>
+                                        <p>Carrera 2 No. 10-70</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <div class="text-holder">
+
+                                        <h6 class="text-uppercase">CORREO</h6>
+                                        <p>yamirlamaya59@unisalle.edu.co</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modall ">
+        <div class="modal-body ">
+          <div class="row align-items-center">
+            <div class="col-6 d-flex flex-column">
+                <img src="images/Logo.png" alt="logo">
+                <p class="text-center">SEMILLERO DE INVESTIGACIÓN VTS</p>
+                <p class="text-center">SEMILLERO DE INVESTIGACION SAVARC</p>
+            </div>
+            <Login client:only/>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+<style>
+    form input{
+        background-color: #414141;
+        color: white;
+        border-radius: 20px;
+        border: 0;
+    }
+    .footer-main img{
+        width: 80%;
+    }
+    .footer-main{
+        padding: 10px 0;
+
+        width: 100%;
+        color: white;
+        background-color: black;
+        display: flex;
+        align-self: center;
+        font-size: 0.8rem;
+
+    }
+    .footer-col {
+        padding: 0; 
+        margin-bottom: 5px; 
+    }
+    .footer-widget a{
+        color: white;
+        text-decoration: none;
+        margin: 0;
+
+    }
+    .social-icon li{
+        display: flex;
+        
+        gap: 10px;
+    }
+    .social-icon i{
+        font-size: 1rem;
+    }
+    .Mod{
+        background-color: transparent;
+        border: 0;
+        color: white;
+        padding-left: 0;
+    }
+    .text-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    }   
+    .modall{
+        background-color: #121B26;
+        color: white;
+        border-radius: 50px;
+    }
+</style>

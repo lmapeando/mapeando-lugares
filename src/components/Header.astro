@@ -1,0 +1,68 @@
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-0 z-1">
+    <div class="container-fluid p-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-around align-items-center">
+          <li class="nav-item">
+            <a class="nav-link ButtonV" aria-current="page" href="/Formulario">PARTICIPAR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Relatos">RELATOS</a>
+          </li>
+          <a class="navbar-brand" href="#">MAPEANDO LUGARES</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/Galerias">GALERÍA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AcercaDe">ACERCA DE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contactenos">CONTACTOS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<script>
+  var url = window.location.href;
+  var itemList = document.querySelectorAll("ul.navbar-nav li")
+  itemList.forEach(function(item){
+    var enlace = item.querySelector("a");
+    if(enlace.href===url){
+      item.classList.add("active")
+    }
+  })
+</script>
+  <style>
+    
+    .nav{
+        background-color: #1E2C3D;
+    }
+    .nav a{
+        color: white;
+        font-weight: bold;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    .ButtonV{
+        background-color: #56B93D;
+        border-radius: 20px;
+    }
+    .active .ButtonV{
+      background-color: white;
+      color:#1E2C3D;
+}
+    .active{
+        text-align: center;
+        min-width: 100px;
+        background-color: #434F5C;
+        border-radius: 20px;
+    }
+  </style>

@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+---
+<Layout title="Acerca De">
+    <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 col-md-6 col-sm-12 column-gap-3 d-flex flex-column Acerca">
+                    <img src="images/VTS.png" alt="">
+                    <p class="subtitle">Semillero de Investigación Vivienda, Territorio y Sostenibilidad</p>
+                    <p class="text m-auto">Generar de manera transdisciplinaria conocimiento sobre temáticas como confort de la vivienda, materiales, sistemas constructivos, ordenamiento y planificación de territorios, teniendo en cuenta los factores que intervienen en la sostenibilidad como aporte a la transformación del país.</p>
+                </div> 
+                <div class="col-lg-4 col-md-6 col-sm-12 column-gap-3 d-flex flex-column Acerca AcercaA">
+                    <img src="images/SAVARC.png" alt="">
+                    <p class="subtitle">Semillero Automatización Visión Artificial Robótica y Control (GRUPO AVARC)</p>
+                    <p class="text m-auto">Formar estudiantes en la investigación en el área de automatización, visión artificial, robótica y control; socializando los conocimientos desarrollados y sirviendo de inspiración para motivar a la comunidad de Ingeniería en Automatización.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 column-gap-3 d-flex justify-content-center flex-column Acerca">
+                    <img src="images/LOGO2.png" alt="">
+                    <p class="subtitle">Mapeando Lugares</p>
+                    <p class="text m-auto">Se genera la iniciativa de Mapeando Lugares, por medio de los semillero VTS y SAVARC de la Universidad de La Salle, en el cual se buscó diseñar una página WEB donde el ciudadano pueda participar, dar su vista actual del sector y poder de la misma forma ser participe del desarrollo urbano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>
+
+<style>
+.Acerca img{
+    width: 75%;
+    border-radius: 50px;
+    margin: auto;
+}
+.AcercaA{
+    background-color: #1C2F71;
+    color: white;
+}
+.Acerca{
+    border: 1px solid black;
+    border-radius: 50px ;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    max-width: 400px;
+    padding-bottom: 50px;
+}
+.subtitle{
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.text{
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 315px;
+}
+</style>

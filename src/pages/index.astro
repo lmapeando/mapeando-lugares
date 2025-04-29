@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Mapeando Lugares">
+	<section>
+		<div class="container p-0">
+			<img class="ImgInicio" src="images/Inicio.png" alt="">
+			<div class="centrado"> 
+				<img class="logo" src="images/Logo.png" alt="">
+				<div class="text mt-5">
+					<h1 class="title">MAPEANDO LUGARES</h1>
+					<h3 class="sub-title">PARTICIPA Y CUÉNTANOS EL ESTADO DE TU CIUDAD</h3>
+					<p>Todo el mundo puede ser parte de la solución, cuéntanos la historia de la zona donde vives, algún suceso importante y las problemáticas de tu barrio, porque con tu apoyo se puede contribuir a un desarrollo del sector en el cual todos convivimos y somos partícipes.</p>
+				</div>
+				<div class="butt ">
+					<a class="ButtonV" href="/Formulario">PARTICIPAR</a>
+				</div>
+			</div>
+			
+			<div class="butt2 esquina">
+				<a class="ButtonV" href="/Relatos">VER MAS &gt;</a>
+			</div>
+		</div>
+
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="museo">MUSEOS Y SU IMPORTANCIA SOCIAL 
+				</div>
+				<div class="col-md-6">
+					<p class="cuerpo ">Relato acerca del impacto de los museos del sector de La Candelaria y como enfrentan cada día los cambios de la sociedad debido al avance tecnológico, tratando de generar una mayor visualización en el sector más histórico de la ciudad.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img class="ImgActual" src="images/MUSEOS.png" alt="">
+				</div>
+				<div class="col-md-6 align-self-center justify-content-center museo2">
+					<p class="MarcaAgua">Museo Casa de Moneda - Colección Numismática del Banco de la Republica.</p>
+					<p class="cuerpo2">Fotografía por: Mario Carvajal</p>
+					<div class="butt3">
+					<a class="ButtonV2" href="/Galerias">VER LAS COLECCIONES</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sectionVideo">
+		<h3>ARTE Y CULTURA EN EL CENTRO DE BOGOTÁ</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Db07CkyC60E?si=oOLILvXnUrSbd2KC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</section>
+</Layout>
+
+<style>
+	img {
+		width: 100%;
+	}
+	.ImgActual{
+		width: 70%;
+	}
+	.ImgInicio{
+		position: relative;
+		top: -100px;
+		z-index: 0;
+	}
+	.title{
+		font-weight: bold;
+	}
+	.sub-title{
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	.text{
+		font-weight: bold;
+		max-width: 550px;
+	}
+	.logo{
+		max-width: 250px;
+	}
+	.container{
+		min-width: 100%;
+		position: relative;
+		display: inline-block;
+		text-align: center;
+	}
+	.centrado{
+		position: absolute;
+    	top: 30%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.esquina{
+		position: absolute;
+    	top: 75%;
+    	left: 90%;
+    	transform: translate(-50%, -50%);
+		color: white;
+	}
+	.ButtonV{
+		text-align: center;
+		text-decoration: none;
+		color: white;
+    }
+	.ButtonV2{
+		text-decoration: none;
+		color: black;
+		font-size: 0.7rem;
+    }
+	
+	.butt{
+		text-align: center;
+		width: 180px;
+		font-size: 1.4rem;
+		font-weight: bold;
+		min-height: 40px;
+		background-color: #56B93D;
+        border-radius: 20px;
+	}
+	.butt2{
+		text-align: center;
+		width: 180px;
+		font-size: 1.4rem;
+		font-weight: bold;
+		min-height: 40px;
+		background-color: transparent;
+        border-radius: 20px;
+		border: white solid ;
+	}
+	.butt3{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 150px;
+		font-size: 1.4rem;
+		font-weight: bold;
+		height: 30px;
+		background-color: transparent;
+        border-radius: 20px;
+		border: black solid ;
+	}
+	.museo{
+		font-size: 2.813rem;
+		font-weight: bold;
+	}
+
+	.cuerpo{
+		font-size: 1.25rem;
+		text-align: left;
+	}
+	.cuerpo2{
+		font-size: 1.25rem;
+		text-align: right;
+		margin-left: 40%;
+	}
+	.MarcaAgua{
+		color: #40582A;
+		font-size: 1.563rem;
+		font-weight: bold;
+
+	}
+	.museo2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+
+	.item {
+  float: left;
+  width: 100%;
+  margin-bottom: 1.8em;
+  }
+  .sectionVideo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+  }
+  .sectionVideo h3{
+	font-weight: bold;
+	margin-bottom: 25px;	
+  }
+</style>

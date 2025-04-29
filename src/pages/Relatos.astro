@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import RelatosSection from "../components/RelatosaSection.jsx";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Map from "../components/map.jsx"
+---
+
+<Layout title="Relatos">
+<h2 class="title ms-5">RELATOS</h2>
+
+  <RelatosSection client:only/>  
+</Layout>

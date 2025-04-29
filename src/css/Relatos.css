@@ -1,0 +1,125 @@
+.CardRelatos{
+    max-width: 360px;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 10px 5px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.CardRelatos img{
+    width: 90%;
+    max-height: 275px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 10px 5px 2px 1px rgba(0, 0, 0, 0.3);
+
+}
+.cuerpoRegular{
+    font-size: 1.25rem;
+}
+.images img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 15px;
+    border: solid 5px #1E2C3D;
+
+}
+.galeria{
+    max-width: 300px;
+    box-shadow: 10px 5px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    
+
+}
+.galeria img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+.mapeando{
+    max-width: 420px;
+    max-height: 420px;
+}
+.relato img{
+    width: 100%;
+    max-height: 275px;
+}
+
+.localidad{
+    font-size: 0.938rem;
+    font-weight: bold;
+    text-align: center;
+}
+.redaccion{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.nombre{
+    font-size: 1.563rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+.color-todos{
+    background-color: #56B93D !important; 
+}
+.color-seguridad{
+    background-color: #FB6558 !important; 
+
+}
+.color-cultura{
+    background-color: #FEAF6B !important; 
+
+}
+.color-espacio-publico{
+    background-color: #CB6DF0 !important; 
+
+}
+.color-eventos{
+    background-color: #9E6730 !important; 
+
+}
+.color-patrimonio{
+    background-color: #2CBAC8 !important; 
+
+}
+.color-medio-ambiente{
+    background-color:#3fa828  !important; 
+
+}
+.color-movilidad{
+    background-color: #C66271 !important; 
+}
+
+
+.color-seguridadI{
+    color: #FB6558 !important; 
+    font-size: 30px;
+}
+.color-culturaI{
+    color: #FEAF6B !important; 
+    font-size: 30px;
+}
+.color-espacio-publicoI{
+    color: #CB6DF0 !important; 
+    font-size: 30px;
+}
+.color-eventosI{
+    color: #9E6730 !important; 
+    font-size: 30px;
+}
+.color-patrimonioI{
+    color: #59AAF5 !important; 
+    font-size: 30px;
+}
+.color-medio-ambienteI{
+    color: #2CBAC8 !important; 
+    font-size: 30px;
+}
+.color-movilidadI{
+    color: #C66271 !important; 
+    font-size: 30px;
+}
+.chec a{
+    text-decoration: none;
+    color: #6c757d;
+}

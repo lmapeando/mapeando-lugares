@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import RelatoInd from "../components/RelatoInd.jsx"
+import Filtros from "../components/Filtros";
+---
+
+<Layout title="Relato">
+    <section class="ms-5 mt-3">
+        <Filtros client:only/>
+    </section>
+<section class="ms-5 me-5">
+    <RelatoInd client:only />
+</section>
+</Layout>
+<style>
+    .title{
+        font-weight: bold;
+    }
+</style>
