@@ -57,10 +57,10 @@
   .active .ButtonV{
     background-color: white;
     color:#1E2C3D;
-}
+  }
   .active{
     text-align: center;
-    min-width: 100px;
+    min-width: auto;
     background-color: #434F5C;
     border-radius: 20px;
   }
@@ -79,8 +79,22 @@
       min-width: auto; /* Ajustamos el ancho del indicador activo */
       padding: 6px 10px;
     }
-  }
 
+    .navbar-toggler {
+      margin: 0 auto; /* Centrar horizontalmente el botón */
+      display: block; /* Asegurar que ocupa su propio bloque */
+      background-color: white; /* Establecer el color de fondo del botón a blanco */
+      border-color: white; /* Establecer el color del borde del botón a blanco */
+    }
+
+    .container-fluid {
+      background-color: #1E2C3D; /* Establecer el color de fondo del contenedor del botón */
+      padding: 10px; /* Añadir un poco de padding para que no esté pegado al borde */
+      display: flex;
+      justify-content: center; /* Centrar el botón */
+    }
+  }
+  
   /* Media Query para pantallas de 600px de ancho o menos (móviles más pequeños) */
   @media (max-width: 600px) {
     .navbar-brand {
