@@ -1,5 +1,8 @@
 ---
 import Login from "./Login.jsx";
+import { Image } from 'astro:assets';
+import logo from '../assets/Logo.png'; 
+import logoDAB from '../assets/DAB.png'; 
 ---
 
 <footer>
@@ -8,8 +11,8 @@ import Login from "./Login.jsx";
             <div class="row">
                 <div class="footer-col logo-col">
                     <div class="logo-part">
-                        <a href="#" class="footer-logo text-uppercase">
-                            <img src="images/Logo.png" alt="logo" />
+                        <a href="/" class="footer-logo text-uppercase">
+                            <Image src={logo} alt="logo"/>
                         </a>
                     </div>
                 </div>
@@ -26,7 +29,7 @@ import Login from "./Login.jsx";
                     </button>
                 </div>
                 <div class="footer-col dab-col">
-                    <img src="images/DAB.png" alt="logo DAB" />
+                    <Image src={logoDAB} alt="logo DAB" />
                 </div>
                 <div class="footer-col contact-col">
                     <div class="footer-widget">
@@ -79,7 +82,7 @@ import Login from "./Login.jsx";
             <div class="modal-body">
                 <div class="row align-items-center">
                     <div class="col-6 d-flex flex-column align-items-center">
-                        <img src="images/Logo.png" alt="logo" />
+                        <Image src={logo} alt="logo"  /> 
                         <p class="text-center">
                             SEMILLERO DE INVESTIGACIÓN VTS
                         </p>
@@ -93,7 +96,6 @@ import Login from "./Login.jsx";
         </div>
     </div>
 </div>
-
 <style>
     form input {
         background-color: #414141;
@@ -117,7 +119,8 @@ import Login from "./Login.jsx";
 
     .container {
         width: 90%;
-        max-width: 1200px;
+        max-width: 1200px; /* Mantenemos el max-width para el contenido */
+        margin: 0 auto; /* Centramos el contenedor */
     }
 
     .row {
@@ -204,34 +207,38 @@ import Login from "./Login.jsx";
     /* Media Query para pantallas de PC (768px y más) */
     @media (min-width: 768px) {
     .footer-main {
+        width: 100%; /* El footer ocupa todo el ancho */
+        color: white;
+        background-color: black;
+        padding: 10px 20px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around; /* Distribuir el espacio alrededor de los hijos directos */
+        justify-content: center; /* Centra el contenedor */
         align-items: flex-start;
-        text-align: left;
-        padding: 10px 20px; /* Añade un poco de padding horizontal al footer */
     }
 
     .container {
-        /* Mantén el container solo para el ancho máximo */
-        max-width: 1200px;
-        width: 100%; /* Asegúrate de que ocupe el ancho disponible dentro del footer */
-        display: block; /* Para que no interfiera con el flexbox del padre */
+        max-width: 1500px; /* Ancho máximo del contenido */
+        width: 100%; /* El contenedor ocupa todo el ancho del footer */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        display: flex;
+        justify-content: space-between; /* Distribuye las columnas */
+        align-items: flex-start;
+        flex-wrap: nowrap;
     }
 
     .row {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between; /* Distribuye el espacio entre las columnas */
+        justify-content: space-between;
         align-items: stretch;
-        width: 100%; /* Ocupa todo el ancho del container */
+        width: 100%; /* La fila ocupa todo el ancho del contenedor */
         margin: 0;
     }
 
     .footer-col {
-        width: auto;
+        width: auto; /* El ancho de cada columna se basa en su contenido */
         margin-bottom: 0;
-        padding: 0; /* Elimina el padding individual de las columnas */
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
@@ -272,8 +279,8 @@ import Login from "./Login.jsx";
 
         .contact-col .social-icon {
             display: flex;
-            flex-direction: row; /* Disposición horizontal para PC */
-            flex-wrap: wrap; /* Permitimos el envoltorio */
+            flex-direction: row;
+            flex-wrap: wrap;
             align-items: flex-start;
             gap: 15px;
             padding: 0;
@@ -282,11 +289,11 @@ import Login from "./Login.jsx";
         }
 
         .contact-col .social-icon li {
-            flex-direction: column; /* Volvemos a apilar verticalmente cada item */
-            align-items: flex-start; /* Alineamos el contenido de cada item a la izquierda */
-            margin-bottom: 10px; /* Espacio vertical entre los items */
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
             padding-bottom: 0;
-            width: auto; /* Ancho automático */
+            width: auto;
         }
 
         .contact-col .text-holder {
